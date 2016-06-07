@@ -45,9 +45,9 @@ An array of data objects to be displayed as graph nodes, each with the
 following properties:
 
 * `name`: The name of this object
-* `type`: The type of this object (e.g. `view`, `table`, etc.)
+* `type`: The type of this object (e.g. `view`, `table`, etc.) 在config.json里面自定义
 * `depends`: An array of object names that this object depends on. denpen on 表示入度被调用，denpen on by表示出度调用其他。
-* `group` (optional): This could be thought of as a "subtype".
+* `group` (optional): This could be thought of as a "subtype". 感觉像别名？
 
 #### `config.json`
 
@@ -60,10 +60,10 @@ A JSON object which contains the following fields:
     for the d3.js force layout.
   * `charge`: The
     [charge](https://github.com/mbostock/d3/wiki/Force-Layout#wiki-charge)
-    for the d3.js force layout.
+    for the d3.js force layout. 引力，+吸引，-排斥
   * `height`: The height of the graph, in pixels.  (The width of the graph is
     determined by the width of the browser window when the page is loaded.)
-  * `numColors`: The number of colors to display (between **3** and **12**).
+  * `numColors`: The number of colors to display (between **3** and **12**). 循环使用的颜色个数
   * `labelPadding`: The padding inside the node rectangles, in pixels.
   * `labelMargin`: The margin outside the node rectangles, in pixels.
 * `types`: Descriptions of the object types displayed in this graph, each with
@@ -75,7 +75,7 @@ A JSON object which contains the following fields:
   conditions an object must meet for the constraints to be applied.
   * **Position constraints**:  These constraints should have the properties
     `weight`, `x` (optional) and `y` (optional).  On each iteration of the
-    force layout, node positions will be "nudged" towards the `x` and/or `y`
+    force layout, node positions will be "nudged推动" towards the `x` and/or `y`
     values given, with a force proportional to the `weight` given.
   * **Link strength constraints**:  These constraints should have the property
     `strength`, which is a multiplier on the link strength of the links to and
