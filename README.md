@@ -46,7 +46,7 @@ following properties:
 
 * `name`: The name of this object
 * `type`: The type of this object (e.g. `view`, `table`, etc.)
-* `depends`: An array of object names that this object depends on.
+* `depends`: An array of object names that this object depends on. denpen on 表示入度被调用，denpen on by表示出度调用其他。
 * `group` (optional): This could be thought of as a "subtype".
 
 #### `config.json`
