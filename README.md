@@ -112,3 +112,10 @@ only extend to the outer edge of the target object's node.
 
 Works in recent versions of Chrome and Firefox.  Other browsers have not been
 tested, but Internet Explorer doesn't stand a chance until at least version 9.
+
+# 《D3.js 数据可视化实战手册》补充
+相互作用力charge，默认斥力-30
+引力gravity，默认0.1。中心布局强度接近0，节点远离中心，引力线性增强
+摩擦力friction，1无摩擦，0冻结即速度立即消失，相当于force.stop()
+node属性px,py用来记录节点上次的位置（好像也要手动输入？）
+alpha参数，布局内部冷却参数，alpha越高，越混沌无序。0稳定
